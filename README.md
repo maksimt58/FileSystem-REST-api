@@ -1,5 +1,7 @@
 # File System REST API
 
+[![Build Status](https://app.travis-ci.com/maksimt58/FileSystem-REST-api.svg?branch=master)](https://app.travis-ci.com/maksimt58/FileSystem-REST-api)
+
 ## Project Information
 Приложение (REST API), которое позволяет хранить историю работы с файлами.  
 

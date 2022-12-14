@@ -1,0 +1,52 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>FileSystemRESTfulAPI</display-name>
+
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.maxisoft.rest.controller.UserServletController</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>FileServlet</servlet-name>
+        <servlet-class>com.maxisoft.rest.controller.FileServletController</servlet-class>
+    </servlet>
+  
+    <servlet>
+        <servlet-name>EventServlet</servlet-name>
+        <servlet-class>com.maxisoft.rest.controller.EventServletController</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/users/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>FileServlet</servlet-name>
+        <url-pattern>/files</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FileServlet</servlet-name>
+        <url-pattern>/files/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>EventServlet</servlet-name>
+        <url-pattern>/events</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>EventServlet</servlet-name>
+        <url-pattern>/events/*</url-pattern>
+    </servlet-mapping>
+</web-app>
